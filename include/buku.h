@@ -1,15 +1,16 @@
 #ifndef BUKU_H_INCLUDED
 #define BUKU_H_INCLUDED
 
+#include <iostream>
 #include "macro.h"
 
 struct buku {
-    string id;
-    string judul;
+    std::string id;
+    std::string judul;
     int tahunTerbit;
-    string penulis;
-    string penerbit;
-    string idRak;
+    std::string penulis;
+    std::string penerbit;
+    std::string idRak;
 };
 typedef struct buku infotype;
 
@@ -24,12 +25,12 @@ struct listBuku {
 };
 
 void createBuku(listBuku LB);
-adrBuku newElementBuku(string idBuku, string judulBuku, int tahunBuku, string penulisBuku, string penerbitBuku);
-adrBuku searchBuku(listBuku& LB, string& judulBuku);
+adrBuku newElementBuku(std::string idBuku, std::string judulBuku, int tahunBuku, std::string penulisBuku, std::string penerbitBuku);
+adrBuku searchBuku(listBuku& LB, std::string& judulBuku);
 void insertLastBuku(listBuku& LB, adrBuku B);
 void deleteFirstBuku(listBuku& LB, adrBuku& B);
 void deleteLastBuku(listBuku& LB, adrBuku& B);
 void deleteAfterBuku(listBuku& LB, adrBuku prec, adrBuku& B);
-void deleteBuku(string idBuku, string judulBuku);
+void deleteBuku(std::string idBuku, std::string judulBuku);
 
 #endif // BUKU_H_INCLUDED

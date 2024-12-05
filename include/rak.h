@@ -6,8 +6,8 @@
 #include "buku.h"
 
 struct rak {
-    string id;
-    string nama;
+    std::string id;
+    std::string nama;
 };
 typedef struct rak infotype;
 
@@ -23,17 +23,17 @@ struct listRak {
 };
 
 void createRak(listRak& LR);
-adrRak newElementRak(string idRak, string namaRak, int jumlahB);
+adrRak newElementRak(std::string idRak, std::string namaRak, int jumlahB);
 void insertFirstRak(listRak& LR, adrRak R);
 void insertLastRak(listRak& LR, adrRak R);
 void showRak(listRak LR);
-adrRak searchRak(listRak LR, string namaRak);
+adrRak searchRak(listRak LR, std::string namaRak);
 void hubungkanRakBuku(adrRak R, adrBuku B);
 void showRakBuku(listRak LR);
 void deleteFirstRak(listRak& LR, adrRak& R);
 void deleteLastRak(listRak& LR, adrRak& R);
 void deleteAfterRak(listRak& LR, adrRak prec, adrRak& R);
-void deleteRak(listRak& LR, string idRak, string namaRak);
+void deleteRak(listRak& LR, std::string idRak, std::string namaRak);
 int totalBuku(listRak LR);
 
 #endif // RAK_H_INCLUDED

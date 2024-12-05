@@ -4,20 +4,18 @@
 #include <iostream>
 #include <vector>
 
-using namespace std;
-
 struct menu {
-    vector<string> opsi;
+    std::vector<std::string> opsi;
 };
 
 void printMenu(menu m);
 
-void addOpsi(menu &m, string teksOpsi) {
+void addOpsi(menu &m, std::string teksOpsi) {
     m.opsi.push_back(teksOpsi);
 }
 
 template<typename... T>
-void addOpsi(menu& m, string teksOpsi, T... t) {
+void addOpsi(menu& m, std::string teksOpsi, T... t) {
     m.opsi.push_back(teksOpsi);
 
     addOpsi(m, t...);

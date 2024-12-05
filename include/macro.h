@@ -6,9 +6,5 @@
 #define Next(P) P->next
 #define Info(P) P->info
 #define NextAnak(P) P->nextAnak
-#include <iostream>
-
-using namespace std;
-
 
 #endif // MACRO_H_INCLUDED
