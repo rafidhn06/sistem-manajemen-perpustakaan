@@ -17,7 +17,7 @@ void addAtribut(tabel& t, Args... args) {
 }
 
 void addRecord(tabel& t, std::vector<std::vector<sel>> record) {
-    for (unsigned i = 0; i < record.size(); i++) {
+    for (size_t i = 0; i < record.size(); i++) {
         if (record[i].size() != t.atribut.size()) {
             throw std::invalid_argument("Panjang record tidak sesuai dengan banyak atribut");
         }
