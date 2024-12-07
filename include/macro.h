@@ -7,10 +7,4 @@
 #define Info(P) P->info
 #define NextAnak(P) P->nextAnak
 
-// Tampilan Menu
-
-void menu();
-void subMenuInsert();
-void subMenuDelete();
-
 #endif // MACRO_H_INCLUDED
