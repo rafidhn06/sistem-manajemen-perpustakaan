@@ -1,0 +1,250 @@
+001,Pemrograman C++,2020,Bjarne Stroustrup,Addison-Wesley,06
+002,Dasar-Dasar Algoritma,2018,Thomas H. Cormen,MIT Press,06
+003,Sapiens: Riwayat Umat Manusia,2014,Yuval Noah Harari,Harper,04
+004,Laskar Pelangi,2005,Andrea Hirata,Bentang Pustaka,01
+005,Biografi Albert Einstein,1996,Walter Isaacson,Simon & Schuster,07
+006,Dunia Sophie,1991,Jostein Gaarder,Farrar Straus Giroux,05
+007,AI: A Modern Approach,2021,Stuart Russell,Pearson,06
+008,Sejarah Peradaban Islam,2010,Ahmad Mansur Suryanegara,Pustaka,04
+009,Ensiklopedia Anak Pintar,2012,Tim Ensiklopedia,BIP,05
+010,Majalah Ilmiah Nasional,2023,Redaksi Ilmiah,Gramedia,09
+011,Dilan: Dia Adalah Dilanku,1990,Pidi Baiq,Pastel Books,10
+012,Ensiklopedia Hewan,2015,Tim Ensiklopedia,BIP,11
+013,Pendidikan Karakter,2019,Doni Koesoema,Grasindo,12
+014,Kamus Inggris-Indonesia,2001,John M. Echols dan Hassan Shadily,Gramedia,13
+015,Seni Rupa Modern,1985,Herbert Read,Thames & Hudson,14
+016,Al-Qur'an dan Tafsirnya,2009,M. Quraish Shihab,Lentera Hati,15
+017,Hukum Internasional,2020,Mochtar Kusumaatmadja,Alumni,16
+018,Psikologi Sosial,2017,Elliot Aronson,Pearson,17
+019,Teori Politik Modern,1995,David Held,Stanford Press,18
+020,Komputer dan Internet,2022,Tim Komputer,Elex Media Komputindo,19
+021,Panduan Hidup Sehat,2021,Dr. Andrew Weil,Gramedia,20
+022,Fisika Dasar,2021,David Halliday,Wiley,03
+023,Pengantar Matematika,2020,Howard Anton,Wiley,23
+024,Teori Ekonomi Mikro,2020,Robert S. Pindyck,Pearson,22
+025,Pengantar Pendidikan,2020,John Dewey,Pearson,12
+026,Komunikasi Bisnis,2021,Raymond V. Lesikar,McGraw-Hill,48
+027,Pengantar Ilmu Politik,2020,Robert A. Dahl,SAGE Publications,18
+028,Pengenalan Hukum Konstitusi,2020,M. N. Shukla,Sinar Grafika,16
+029,Manajemen Rantai Pasokan,2020,Sunil Chopra,Pearson,48
+030,Teknologi dan Rekayasa Komputer,2021,Carl J. Lee,Wiley,19
+031,Teori dan Praktik Akuntansi,2021,Richard D. Irwin,McGraw-Hill,42
+032,Pembelajaran Bahasa,2020,David Nunan,Cambridge University Press,13
+033,Sistem Informasi Geografis,2021,Kang-Tsung Chang,Wiley,21
+034,Analisis Strategis,2020,Michael E. Porter,McGraw-Hill,48
+035,Psikologi dan Pengembangan Pribadi,2020,John F. Loo,Cengage Learning,17
+036,Teknik Elektro Lanjutan,2020,William H. Hayt,McGraw-Hill,29
+037,Dasar-Dasar Filosofi,2020,Peter Singer,Routledge,24
+038,Teknologi Pend. Modern,2020,Richard E. Mayer,Wiley,12
+039,Manajemen Strategis,2020,Fred R. David,Pearson,48
+040,Pengantar Teknik Industri,2021,Mikell P. Groover,Pearson,29
+041,Sistem Keamanan Jaringan,2021,William Stallings,Pearson,19
+042,Panduan Hukum Bisnis,2021,Neil Rickman,McGraw-Hill,16
+043,Dasar-Dasar Analisis Keuangan,2021,Thomas R. Robinson,Wiley,42
+044,Pengenalan Komunikasi Antarbudaya,2020,Richard D. Brislin,Wiley,46
+045,Dasar-Dasar Hukum Pidana,2020,Sudikno Mertokusumo,Sinar Grafika,16
+046,Panduan Ekonomi Makro,2021,N. Gregory Mankiw,McGraw-Hill,22
+047,Pengantar Statistik untuk Bisnis,2021,Mark L. Berenson,Pearson,23
+048,Pengantar Akuntansi Keuangan,2020,Paul D. Kimmel,McGraw-Hill,42
+049,Manajemen SDA Berkelanjutan,2021,Benjamin A. Steinberg,McGraw-Hill,28
+050,Hukum dan Masyarakat,2020,Eugen Ehrlich,Oxford University Press,16
+051,Sejarah Dunia Modern,2021,J. M. Roberts,Oxford University Press,04
+052,Dasar-Dasar Pemrograman Python,2021,Timothy Budd,Pearson,06
+053,Manajemen Keuangan Perusahaan,2021,Eugene F. Brigham,Pearson,42
+054,Pengantar Fisika Modern,2020,David Griffiths,Pearson,03
+055,Pengantar Ekonomi Dunia,2021,Paul Krugman,Pearson,22
+056,Teori Ekonomi Makro,2021,Olivier Blanchard,Pearson,22
+057,Psikologi Perkembangan,2020,Laura E. Berk,Pearson,17
+058,Akuntansi Dasar,2020,Carl S. Warren,Cengage Learning,42
+059,Hukum Internasional,2020,Michael J. Trebilcock,Oxford University Press,16
+060,Biologi Molekuler,2021,James D. Watson,Pearson,03
+061,Ekonomi Mikro,2020,Paul A. Samuelson,McGraw-Hill,22
+062,Manajemen Proyek,2021,Harold Kerzner,Wiley,29
+063,Dasar-Dasar Sosiologi,2020,Anthony Giddens,Polity Press,46
+064,Hukum Bisnis Internasional,2020,Peter T. Muchlinski,Oxford University Press,16
+065,Fisika Kuantum,2021,David Griffiths,Pearson,03
+066,Pengantar Teori Sistem,2020,Ludwig von Bertalanffy,Springer,29
+067,Hukum Konstitusi,2021,Ronald Dworkin,Harvard University Press,16
+068,Ekonomi Pembangunan,2021,Michael P. Todaro,Pearson,22
+069,Teknologi Digital,2020,Daniel M. Berry,Pearson,45
+070,Dasar-Dasar Akuntansi Manajerial,2021,Charles T. Horngren,Pearson,42
+071,Ilmu Lingkungan,2021,William P. Cunningham,McGraw-Hill,28
+072,Sosiologi Pendidikan,2020,Emile Durkheim,Routledge,46
+073,Manajemen Layanan Kesehatan,2021,Neil W. S. Cresswell,Pearson,20
+074,Psikologi Klinis,2020,David H. Barlow,Pearson,17
+075,Sistem Keamanan Jaringan Komputer,2021,William Stallings,Pearson,19
+076,Pengantar Manajemen Bisnis,2021,William M. Pride,Cengage Learning,48
+077,Pengenalan Desain Grafis,2021,Robin Landa,Pearson,45
+078,Pendidikan dan Globalisasi,2020,Hanan A. al-Masri,Routledge,12
+079,Analisis Data,2020,Norman Matloff,Pearson,23
+080,Teori Manajemen,2021,Stephen P. Robbins,Pearson,48
+081,Sejarah Ekonomi Dunia,2020,Robert C. Allen,Oxford University Press,22
+082,Hukum Perdata,2020,Subekti,Sinar Grafika,16
+083,Pengantar Psikologi,2021,David G. Myers,McGraw-Hill,17
+084,Dasar-Dasar Fisika Dasar,2021,Paul A. Tipler,Pearson,03
+085,Pengantar Sistem Komputer,2020,Andrew S. Tanenbaum,Pearson,19
+086,Manajemen Sumber Daya Manusia,2020,Gary Dessler,Pearson,48
+087,Metode Penelitian Sosial,2021,Earl Babbie,Cengage Learning,46
+088,Pengantar Sistem Jaringan,2020,Keith W. Ross,Addison-Wesley,19
+089,Teori Sosial,2021,Anthony Giddens,Polity Press,46
+090,Hukum Dagang,2020,M. S. Laba,Sinar Grafika,16
+091,Panduan Hidup Sehat,2021,Dr. Andrew Weil,Gramedia,20
+092,Teknologi PJJ,2020,Michael G. Moore,McGraw-Hill,12
+093,Psikologi Sosial,2020,David Myers,McGraw-Hill,17
+094,Teori Politik,2020,David Held,Stanford University Press,18
+095,Analisis Keputusan,2021,J. Edward Russo,Wiley,29
+096,Panduan Praktis SEO,2021,Michael H. Black,McGraw-Hill,45
+097,Manajemen Kinerja,2020,Robert L. Mathis,Cengage Learning,48
+098,Pengantar Bahasa Inggris,2020,Michael Swan,Oxford University Press,13
+099,Sejarah Teknologi,2021,Henry Petroski,Wiley,06
+100,Sistem Basis Data,2020,Ramez Elmasri,Pearson,19
+101,Teori Keuangan,2020,Stephen A. Ross,McGraw-Hill,42
+102,Fisika Terapan,2021,John R. Taylor,McGraw-Hill,03
+103,Sistem Manajemen Informasi,2021,Ralph M. Stair,Cengage Learning,19
+104,Hukum dan Masyarakat,2020,Eugen Ehrlich,Oxford University Press,16
+105,Biologi Sel dan Molekul,2021,Bruce Alberts,Pearson,03
+106,Teknologi Digital dan Masa Depan,2020,John Naughton,MIT Press,45
+107,Teori Ekonomi Makro,2021,Olivier Blanchard,Pearson,22
+108,Pendidikan Karakter,2020,Doni Koesoema,Grasindo,12
+109,Sejarah Sosial Dunia,2020,Peter N. Stearns,Pearson,04
+110,Analisis dan Perancangan Sistem,2020,Alan Dennis,Pearson,29
+111,Teori Sosiologi,2021,Peter L. Berger,Routledge,46
+112,Dasar-Dasar Manajemen Proyek,2020,Harold Kerzner,Wiley,29
+113,Dasar-Dasar Akuntansi,2020,Charles T. Horngren,Pearson,42
+114,Panduan Komputer dan Internet,2020,Tim Komputer,Elex Media Komputindo,19
+115,Hukum Perusahaan,2021,Ross Cranston,Oxford University Press,16
+116,Psikologi Pendidikan,2021,John W. Santrock,McGraw-Hill,17
+117,Pengantar Ekonomi Dunia,2020,N. Gregory Mankiw,Cengage Learning,22
+118,Sistem Jaringan Komputer,2021,James F. Kurose,Pearson,19
+119,Manajemen Organisasi,2021,Richard L. Daft,Cengage Learning,48
+120,Hukum Pidana,2020,Sudikno Mertokusumo,Sinar Grafika,16
+121,Teknik Komunikasi,2021,L. J. Mullins,Pearson,46
+122,Dasar-Dasar Biologi,2020,Neil A. Campbell,Pearson,03
+123,Pengantar Statistik,2021,James T. McClave,Pearson,23
+124,Fisika untuk Ilmu Hayat,2020,Philip K. E. Meis,Wiley,03
+125,Pengantar Kimia Organik,2021,Leroy G. Wade,Pearson,03
+126,Dasar-Dasar Teori Hukum,2020,Jurisprudence,Oxford University Press,16
+127,Teori Pengembangan Anak,2021,David Shaffer,Cengage Learning,17
+128,Pengantar Manajemen Keuangan,2020,Lawrence J. Gitman,Pearson,42
+129,Praktik Manajemen Bisnis,2021,William M. Pride,Cengage Learning,48
+130,Manajemen Strategi,2020,Fred R. David,Pearson,48
+131,Pengantar Mikroekonomi,2021,Paul A. Samuelson,McGraw-Hill,22
+132,Manajemen Operasi,2020,Jay Heizer,Pearson,48
+133,Hukum Bisnis dan Komersial,2021,Geoffrey M. Berridge,Sinar Grafika,16
+134,Ekonomi Industri,2020,John T. Addison,Pearson,22
+135,Dasar-Dasar Hukum Internasional,2020,Shirley V. Scott,Oxford University Press,16
+136,Teori Sosial Modern,2021,Pierre Bourdieu,Routledge,46
+137,Dasar-Dasar Ekonomi Mikro,2020,Christopher T. S. Johnson,McGraw-Hill,22
+138,Analisis Sistem,2021,Alan Dennis,Pearson,29
+139,Manajemen Risiko,2020,James Lam,Wiley,42
+140,Sejarah Pemikiran Filsafat,2020,Bertrand Russell,Routledge,24
+141,Pengantar Fisika untuk Teknik,2020,Raymond A. Serway,Cengage Learning,03
+142,Psikologi Perkembangan,2021,John W. Santrock,McGraw-Hill,17
+143,Hukum Keluarga,2021,John Eekelaar,Oxford University Press,16
+144,Manajemen Sumber Daya Alam,2020,William D. Nordhaus,McGraw-Hill,28
+145,Pengantar Analisis Ekonomi,2021,Robert S. Pindyck,Pearson,22
+146,Ilmu Kesehatan Masyarakat,2021,William M. Pendergrass,McGraw-Hill,20
+147,Sistem Informasi Bisnis,2021,Paul A. Larson,Pearson,19
+148,Manajemen Pemasaran,2021,Philip Kotler,Pearson,48
+149,Pengantar Ekonomi Pembangunan,2020,Michael P. Todaro,Pearson,22
+150,Hukum Bisnis Internasional,2021,Peter T. Muchlinski,Oxford University Press,16
+151,Dasar-Dasar Kewirausahaan,2020,Jeffry Timmons,McGraw-Hill,48
+152,Pengantar Teknik Lingkungan,2021,R. A. Smith,Wiley,28
+153,Hukum dan Kebijakan Lingkungan,2020,Richard L. Revesz,Oxford University Press,28
+154,Manajemen Organisasi dan Kepemimpinan,2020,Stephen P. Robbins,Pearson,48
+155,Teori Akuntansi,2021,Richard E. Schroeder,Wiley,42
+156,Analisis Keuangan Perusahaan,2021,Eugene F. Brigham,Pearson,42
+157,Dasar-Dasar Manajemen Sumber Daya Alam,2021,Benjamin A. Steinberg,McGraw-Hill,28
+158,Pendidikan Politik,2020,Robert A. Dahl,Yale University Press,18
+159,Ilmu Komputer Dasar,2021,John E. Hopcroft,Pearson,19
+160,Dasar-Dasar Ekonomi Pembangunan,2021,A. G. Fischer,Pearson,22
+161,Hukum Korporasi,2021,David A. Skeel Jr.,Oxford University Press,16
+162,Psikologi Perilaku,2021,Philip G. Zimbardo,Pearson,17
+163,Pengantar Hukum Pidana,2020,Suparman Marzuki,Sinar Grafika,16
+164,Teknik Manajemen Operasional,2021,William J. Stevenson,McGraw-Hill,48
+165,Teori Ekonomi Makro Lanjutan,2021,David Romer,Pearson,22
+166,Dasar Pendidikan Karakter,2020,Doni Koesoema,Grasindo,12
+167,Biologi Seluler,2021,Alberts Bruce,Pearson,03
+168,Hukum Prosedur Perdata,2021,A. M. Djan,Sinar Grafika,16
+169,Komunikasi Organisasi,2021,Michael L. Tushman,Pearson,46
+170,Pendidikan Agama Islam,2020,A. H. Al-Syahrastani,Pustaka,15
+171,Ekonomi Internasional,2020,Paul R. Krugman,Pearson,22
+172,Hukum Perlindungan Konsumen,2021,Peter J. Huber,Oxford University Press,16
+173,Pengantar Manajemen Operasional,2020,William J. Stevenson,McGraw-Hill,48
+174,Pend. Karakter U. Remaja,2021,Doni Koesoema,Grasindo,12
+175,Hukum Keuangan,2021,Jeffrey R. Brown,McGraw-Hill,42
+176,Dasar-Dasar Psikologi,2021,Douglas A. Bernstein,Pearson,17
+177,Fisika Terapan untuk Teknik,2020,David Halliday,Wiley,03
+178,Ekonomi Mikro Lanjutan,2021,Hal R. Varian,Pearson,22
+179,Komunikasi Massa,2021,Denis McQuail,SAGE Publications,46
+180,Pengantar Komunikasi Bisnis,2020,Raymond V. Lesikar,McGraw-Hill,48
+181,Pengantar Teknologi,2020,Daniel M. Berry,Pearson,06
+182,Sejarah Dunia,2020,J. M. Roberts,Oxford University Press,04
+183,Ekonomi Bisnis,2020,William G. Shughart,McGraw-Hill,22
+184,Filsafat Politik,2021,John Locke,Oxford University Press,24
+185,Manajemen Kesehatan,2021,Timothy B. Smith,McGraw-Hill,20
+186,Ekonomi Mikroekonomi,2020,Robert Pindyck,Pearson,22
+187,Hukum Kesehatan,2020,Michael J. S. Smit,McGraw-Hill,20
+188,Teknologi Modern,2021,George R. Blakey,Pearson,06
+189,Sistem Sosial,2021,William Fielding,Routledge,46
+190,Manajemen SDM Strategis,2020,Wayne F. Cascio,McGraw-Hill,48
+191,Teori Lingkungan,2020,John P. Smith,Wiley,28
+192,Biologi Evolusi,2021,Richard Dawkins,Oxford University Press,03
+193,Sejarah Ilmu Sosial,2021,Anthony Giddens,Polity Press,46
+194,Teknik Komunikasi Bisnis,2020,Carol M. Lehman,Pearson,48
+195,Fisika Matematika,2021,Mark R. S. Bassi,McGraw-Hill,03
+196,Dasar-Dasar Perencanaan Keuangan,2020,William D. Reece,Wiley,42
+197,Hukum Lingkungan,2021,Janis P. Ballard,McGraw-Hill,28
+198,Psikologi Abnormal,2020,Ronald J. Comer,Pearson,17
+199,Manajemen Operasi Lanjut,2020,Jay Heizer,Pearson,48
+200,Sistem Keamanan Dunia Maya,2021,William Stallings,Pearson,19
+201,Dasar-Dasar Teknik Elektronika,2021,Thomas L. Floyd,Pearson,29
+202,Hukum Keperdataan,2020,Subekti,Sinar Grafika,16
+203,Teknik Mesin Lanjut,2020,J. E. Shigley,McGraw-Hill,29
+204,Filsafat Ilmu,2021,Karl Popper,Routledge,24
+205,Manajemen Proyek,2021,Harold Kerzner,Wiley,48
+206,Praktikum Biologi,2020,Paul G. Myers,Pearson,03
+207,Pengantar Geografi,2021,Harm De Blij,Oxford University Press,21
+208,Hukum Perdata Internasional,2021,Donald H. Regan,Oxford University Press,16
+209,Pengantar Akuntansi,2020,Jerry J. Weygandt,Wiley,42
+210,Analisis Biologi Molekuler,2021,Alberts Bruce,Pearson,03
+211,Hukum Pidana Internasional,2021,Antonio Cassese,Oxford University Press,16
+212,Dasar-Dasar Pengembangan Bisnis,2021,Harold Koontz,McGraw-Hill,48
+213,Dasar-Dasar Fisika,2020,Halliday,Resnick,Walker,Wiley,03
+214,Pengantar Manajemen Kesehatan,2021,Laura A. L. Z. L. Taylor,Pearson,20
+215,Pengenalan Akuntansi Manajerial,2021,Charles T. Horngren,Pearson,42
+216,Sosiologi Masyarakat,2021,Anthony Giddens,Polity Press,46
+217,Teknologi Informasi dan Komunikasi,2020,James A. O'Brien,McGraw-Hill,19
+218,Pendidikan Seksual,2021,John Bancroft,McGraw-Hill,20
+219,Pengantar Ekonomi Makro,2020,N. Gregory Mankiw,Pearson,22
+220,Manajemen Keuangan Perusahaan,2021,Stephen A. Ross,McGraw-Hill,42
+221,Pengantar Teknik Kimia,2020,J. M. Smith,Wiley,29
+222,Hukum Pajak,2021,David J. Shaviro,Oxford University Press,16
+223,Dasar-Dasar Pengantar Psikologi,2021,Richard J. Gerrig,Pearson,17
+224,Ekonomi Pembangunan,2020,Michael P. Todaro,Pearson,22
+225,Sejarah Ekonomi Dunia,2020,Eric Hobsbawm,Verso,22
+226,Teknologi Rekayasa,2021,S. C. Gupta,Wiley,29
+227,Fisika Energi Terbarukan,2020,David M. F. Tuck,Wiley,03
+228,Pendidikan Kewarganegaraan,2020,K. K. S. Somantri,Sinar Grafika,12
+229,Hukum Perburuhan,2021,Alex E. Martin,Oxford University Press,16
+230,Teori Media,2021,Marshall McLuhan,Routledge,46
+231,Manajemen Keuangan Internasional,2020,Jeff Madura,Pearson,42
+232,Dasar-Dasar Sosiologi,2021,Giddens Anthony,Polity Press,46
+233,Pengantar Kimia Analitik,2021,Gary D. Christian,Wiley,03
+234,Dasar-Dasar Ekonomi Makro,2020,Olivier Blanchard,Pearson,22
+235,Pengantar Matematika Ekonomi,2021,Michael Hoy,Pearson,23
+236,Ilmu Politik,2020,John M. Swain,Pearson,18
+237,Teknik Komunikasi dalam Bisnis,2021,William F. Dietrich,Pearson,46
+238,Hukum Konstitusi,2021,Mark Tushnet,Oxford University Press,16
+239,Dasar-Dasar Pengantar Manajemen,2020,Stephen P. Robbins,Pearson,48
+240,Fisika Lanjut untuk Teknik,2021,David Halliday,Wiley,03
+241,Dasar-Dasar Filsafat Politik,2020,John Rawls,Oxford University Press,24
+242,Analisis Data dalam Ilmu Sosial,2021,Paul Allison,SAGE Publications,46
+243,Hukum Privasi,2021,Daniel J. Solove,Oxford University Press,16
+244,Ekonomi Lingkungan,2020,Charles D. Kolstad,Oxford University Press,22
+245,Manajemen Sumber Daya Alam,2020,Richard L. Revesz,Oxford University Press,28
+246,Dasar-Dasar Desain Grafis,2020,David Dabner,Wiley,45
+247,Pendidikan Geografi,2020,Harm De Blij,Oxford University Press,21
+248,Dasar-Dasar Teori Komunikasi,2021,Denis McQuail,SAGE Publications,46
+249,Pengantar Teknologi Informasi,2020,Rainer,Cengage Learning,19
+250,Hukum Tata Negara,2021,Jimly Asshiddiqie,Sinar Grafika,16

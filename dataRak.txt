@@ -1,0 +1,50 @@
+01,Rak Fiksi
+02,Rak Nonfiksi
+03,Rak Sains
+04,Rak Sejarah
+05,Rak Anak-Anak
+06,Rak Teknologi
+07,Rak Biografi
+08,Rak Referensi
+09,Rak Majalah
+10,Rak Novel
+11,Rak Ensiklopedia
+12,Rak Pendidikan
+13,Rak Bahasa
+14,Rak Seni
+15,Rak Agama
+16,Rak Hukum
+17,Rak Psikologi
+18,Rak Politik
+19,Rak Komputer
+20,Rak Kesehatan
+21,Rak Geografi
+22,Rak Ekonomi
+23,Rak Matematika
+24,Rak Filsafat
+25,Rak Astronomi
+26,Rak Musik
+27,Rak Arsitektur
+28,Rak Lingkungan
+29,Rak Teknik
+30,Rak Fotografi
+31,Rak Sastra
+32,Rak Kebudayaan
+33,Rak Drama
+34,Rak Puisi
+35,Rak Komik
+36,Rak Kuliner
+37,Rak Pariwisata
+38,Rak Antropologi
+39,Rak Linguistik
+40,Rak Mitologi
+41,Rak Kriminal
+42,Rak Keuangan
+43,Rak Keperawatan
+44,Rak Olahraga
+45,Rak Desain Grafis
+46,Rak Ilmu Sosial
+47,Rak Pendidikan Agama
+48,Rak Bisnis
+49,Rak Teknologi Informasi
+50,Rak Inovasi
