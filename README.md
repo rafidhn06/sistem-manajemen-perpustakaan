@@ -1,5 +1,5 @@
 # Demo
-![demo](https://github.com/user-attachments/assets/bbca9ad2-10cd-45cf-a51f-8fec95c6a7f6)
+![demo](https://github.com/user-attachments/assets/3e69a1eb-a818-489f-8583-6b994a0c00aa)
 # Dependensi
 Program ini dapat dijalankan di komputer, dengan syarat komputer tersebut menggunakan Windows sebagai sistem operasinya. Panduan ini dibuat dengan asumsi bahwa syarat tersebut telah terpenuhi.  
 \
