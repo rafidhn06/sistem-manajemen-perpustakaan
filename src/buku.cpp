@@ -15,6 +15,19 @@ adrBuku newElementBuku(buku b)
     return P;
 }
 
+adrBuku searchBuku(listBuku LB, std::string idBuku)
+{
+    adrBuku P = First(LB);
+    while (P != nullptr) {
+        std::string id = Info(P).id;
+        if (id == idBuku) {
+            break;
+        }
+        P = Next(P);
+    }
+    return P;
+}
+
 void insertLastBuku(listBuku& LB, adrBuku B)
 {
     if (First(LB) != nullptr) {
@@ -43,12 +56,13 @@ void deleteFirstBuku(listBuku& LB, adrBuku& B)
 void deleteLastBuku(listBuku& LB, adrBuku& B)
 {
     if (First(LB) != nullptr) {
-        if (Next(B) != nullptr) {
+        if (Next(First(LB)) != nullptr) {
             adrBuku P = First(LB);
             while (Next(Next(P)) != nullptr) {
                 P = Next(P);
             }
             B = Next(P);
+            Next(P) = nullptr;
         } else {
             B = First(LB);
         }
@@ -58,29 +72,86 @@ void deleteLastBuku(listBuku& LB, adrBuku& B)
 void deleteAfterBuku(listBuku& LB, adrBuku prec, adrBuku& B)
 {
     B = Next(prec);
-    if (Next(B) != nullptr) {
-        Next(prec) = Next(B);
-    }
+    Next(prec) = Next(B);
 }
 
 void deleteBuku(listBuku& LB, adrBuku B)
 {
     adrBuku temp = nullptr;
     if (First(LB) != B) {
-        adrBuku P = First(LB);
-        while (Next(Next(P)) != nullptr && Next(P) != B) {
-            P = Next(P);
-        }
-        if (Next(P) == B) {
-            deleteAfterBuku(LB, P, temp);
-        }
-        if (Next(Next(P)) == nullptr) {
-            deleteLastBuku(LB, temp);
+        adrBuku P = searchBuku(LB, Info(B).id);
+        if (P != nullptr) {
+            if (Next(P) != nullptr) {
+                deleteAfterBuku(LB, getElmBukuSebelum(LB, P), temp);
+            } else {
+                deleteLastBuku(LB, temp);
+            }
         }
     } else {
         deleteFirstBuku(LB, temp);
     }
     delete temp;
+}
+
+int totalBuku(listBuku LB){
+    adrBuku P = First(LB);
+    int total = 0;
+
+    if (P == nullptr){
+        return total = 0;
+    } else {
+        while (P != nullptr){
+            total++;
+            P = Next(P);
+        }
+    }
+    return total;
+}
+
+std::vector<std::vector<std::variant<std::string, int>>> getRecordBukuInRak(listBuku LB, unsigned short x)
+{
+    std::vector<std::vector<std::variant<std::string, int>>> record;
+
+    unsigned short start = (x - 1) * 20;
+    unsigned short end = x * 20;
+
+    unsigned short i = 0;
+    adrBuku Q = First(LB);
+    while (Q != nullptr) {
+        if (i >= start && i < end) {
+            std::vector<std::variant<std::string, int>> nodeRecord = {
+                Info(Q).id,
+                Info(Q).judul,
+                Info(Q).tahun,
+                Info(Q).penulis,
+                Info(Q).penerbit,
+                Info(Q).idRak
+            };
+
+            record.push_back(nodeRecord);
+        }
+
+        if (i >= end) {
+            break;
+        }
+
+        Q = Next(Q);
+        i++;
+    }
+
+    return record;
+}
+
+adrBuku getElmBukuSebelum(listBuku LB, adrBuku B)
+{
+    adrBuku P = First(LB);
+    while (P != nullptr) {
+        if (Next(P) == B) {
+            break;
+        }
+        P = Next(P);
+    }
+    return P;
 }
 
 

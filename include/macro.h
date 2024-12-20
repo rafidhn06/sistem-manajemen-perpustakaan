@@ -5,6 +5,6 @@
 #define Prev(P) P->prev
 #define Next(P) P->next
 #define Info(P) P->info
-#define NextAnak(P) P->nextAnak
+#define listB(P) P->listB
 
 #endif // MACRO_H_INCLUDED

@@ -26,10 +26,10 @@ void displayTitle(title T) {
 void displayTitleKeren() {
     printf("\033[?25l");
     char ch = 'x';
-    unsigned short i = 0;
+    unsigned short initial = 0;
     unsigned short nframe = 16;
-
-    while (true) {
+    std::vector<std::vector<std::string>> teksAll;
+    for (unsigned short i = initial; i < nframe; i++) {
         std::string filename = "frames\\" + std::to_string(i) + ".txt";
 
         std::ifstream inFile(filename);
@@ -39,7 +39,6 @@ void displayTitleKeren() {
             break;
         }
 
-        title T;
         std::string line;
         std::vector<std::string> teks;
         while (std::getline(inFile, line)) {
@@ -49,8 +48,14 @@ void displayTitleKeren() {
                 teks.push_back(temp);
             }
         }
+        teksAll.push_back(teks);
+        inFile.close();
+    }
 
-        addTeksTitle(T, teks);
+    unsigned short i = 0;
+    while (true) {
+        title T;
+        addTeksTitle(T, teksAll[i]);
         T.posisi = {MAXBARIS/2 - 26/2, MAXKOLOM/2 - 91/2};
         displayTitle(T);
 
@@ -62,7 +67,6 @@ void displayTitleKeren() {
                 break;
             }
         }
-        inFile.close();
         std::this_thread::sleep_for(std::chrono::milliseconds(30));
     }
     printf("\033[?25h");

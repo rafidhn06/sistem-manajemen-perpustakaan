@@ -45,7 +45,7 @@ void setTabelBuku(tabel& t, listRak LR, unsigned short x)
 void setTabelBukuInRak(tabel& t, adrRak R, unsigned short x)
 {
     addAtribut(t, {"ID","Judul","Tahun","Penulis","Penerbit","ID Rak"});
-    addRecord(t, getRecordBukuByRak(R, x));
+    addRecord(t, getRecordBukuInRak(listB(R), x));
     setPosisiTabel(t, alignCenter(t.ukuran));
     printf("\033[%u;%uH%-15s%-15s%-15s%-15s%-15s", t.posisi.baris + t.ukuran.baris + 1, t.posisi.kolom + 1,
             "1. Insert",
@@ -64,7 +64,7 @@ void sFormTambahBuku(form& f)
 adrBuku searchBukuInRakByRecordTerpilih(adrRak R, tabel t)
 {
     short unsigned counter = 0;
-    adrBuku P = NextAnak(R);
+    adrBuku P = First(listB(R));
     while (P != nullptr) {
         if (counter == t.recordTerpilih) {
             break;
@@ -113,7 +113,7 @@ adrBuku searchBukuByRecordTerpilih(listRak LR, tabel t)
     adrRak P = First(LR);
     adrBuku Q = nullptr;
     while (P != nullptr) {
-        Q = NextAnak(P);
+        Q = First(listB(P));
         while (Q != nullptr) {
             if (counter == t.recordTerpilih) {
                 return Q;
@@ -244,14 +244,14 @@ int main()
                                         if (Q == nullptr) {
                                             adrRak R = newElementRak({b.idRak, "Rak " + b.idRak});
                                             insertLastRak(LR, R);
-                                            insertLastBukuByRak(R, S);
+                                            insertLastBuku(listB(R), S);
                                         } else {
-                                            insertLastBukuByRak(Q, S);
+                                            insertLastBuku(listB(Q), S);
                                         }
                                         break;
                                     }
                                     case '2': {
-                                        if (NextAnak(P) == nullptr) {
+                                        if (First(listB(P)) == nullptr) {
                                             break;
                                         }
 
@@ -273,7 +273,7 @@ int main()
                                         adrBuku Q = searchBukuInRakByRecordTerpilih(P, tBuku);
                                         adrRak R = searchRakById(LR, Info(Q).idRak);
 
-                                        deleteBukuByRak(R, Q);
+                                        deleteBuku(listB(R), Q);
                                         break;
                                     }
                                     case LEFT: {
@@ -283,7 +283,7 @@ int main()
                                         break;
                                     }
                                     case RIGHT: {
-                                        if (j <= (totalBuku(P) - 1) / 20) {
+                                        if (j <= (totalBuku(listB(P)) - 1) / 20) {
                                             j++;
                                         }
                                         break;
@@ -337,9 +337,9 @@ int main()
                             if (P == nullptr) {
                                 adrRak R = newElementRak({b.idRak, "Rak " + b.idRak});
                                 insertLastRak(LR, R);
-                                NextAnak(R) = Q;
+                                First(listB(R)) = Q;
                             } else {
-                                insertLastBukuByRak(P, Q);
+                                insertLastBuku(listB(P), Q);
                             }
                             break;
                         }
@@ -364,7 +364,7 @@ int main()
                             adrBuku P = searchBukuByRecordTerpilih(LR, t);
                             adrRak Q = searchRakById(LR, Info(P).idRak);
 
-                            deleteBukuByRak(Q, P);
+                            deleteBuku(listB(Q), P);
                             break;
                         }
                         case LEFT: {

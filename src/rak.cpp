@@ -15,7 +15,7 @@ adrRak newElementRak(infotypeRak r){
     Info(P) = r;
     Next(P) = nullptr;
     Prev(P) = nullptr;
-    NextAnak(P) = nullptr;
+    listB(P) = {nullptr};
     return P;
 }
 
@@ -55,16 +55,7 @@ void hubungkanRakBuku(listRak& LR, listBuku LB)
                         //std::cout << "Memasukkan Buku dengan ID: " << Info(B).id << " Ke Rak dengan ID: " << Info(R).id << std::endl;
                         adrBuku P = newElementBuku(Info(B));
 
-                        adrBuku Q = NextAnak(R);
-                        if (NextAnak(R) != nullptr) {
-                            while (Next(Q) != nullptr) {
-                                Q = Next(Q);
-                            }
-
-                            Next(Q) = P;
-                        } else {
-                            NextAnak(R) = P;
-                        }
+                        insertLastBuku(listB(R), P);
                     }
                     B = Next(B);
                 }
@@ -89,37 +80,16 @@ adrRak searchRakById(listRak LR, std::string idrak)
     return P;
 }
 
-adrRak searchRakByIdBuku(listRak LR, std::string idbuku)
-{
-    adrRak P = First(LR);
-    if (First(LR) != nullptr) {
-        while (P != nullptr) {
-            if (NextAnak(P) != nullptr) {
-                adrBuku Q = NextAnak(P);
-                while (Q != nullptr) {
-                    std::string idQ = Info(Q).id;
-                    if (idQ == idbuku) {
-                        return P;
-                    }
-                    Q = Next(Q);
-                }
-            }
-            P = Next(P);
-        }
-    }
-    return P;
-}
-
 void insertLastBukuByRak(adrRak& R, adrBuku B)
 {
-    if (NextAnak(R) != nullptr) {
-        adrBuku P = NextAnak(R);
+    if (First(listB(R)) != nullptr) {
+        adrBuku P = First(listB(R));
         while (Next(P) != nullptr) {
             P = Next(P);
         }
         Next(P) = B;
     } else {
-        NextAnak(R) = B;
+        First(listB(R)) = B;
     }
 }
 
@@ -174,11 +144,11 @@ void deleteRak(listRak& LR, adrRak R){
     delete R;
 }
 
-void deleteBukuByRak(adrRak& R, adrBuku B)
+void deleteBukuRak(adrRak& R, adrBuku B)
 {
     adrBuku temp = nullptr;
-    if (NextAnak(R) != B) {
-        adrBuku P = NextAnak(R);
+    if (First(listB(R)) != B) {
+        adrBuku P = First(listB(R));
         while (Next(Next(P)) != nullptr && Next(P) != B) {
             P = Next(P);
         }
@@ -191,29 +161,14 @@ void deleteBukuByRak(adrRak& R, adrBuku B)
             }
         }
     } else {
-        temp = NextAnak(R);
+        temp = First(listB(R));
         if (Next(temp) != nullptr) {
-            NextAnak(R) = Next(temp);
+            First(listB(R)) = Next(temp);
         } else {
-            NextAnak(R) = nullptr;
+            First(listB(R)) = nullptr;
         }
     }
     delete temp;
-}
-
-int totalBuku(adrRak R){
-    adrBuku P = NextAnak(R);
-    int total = 0;
-
-    if (P == nullptr){
-        return total = 0;
-    } else {
-        while (P != nullptr){
-            total++;
-            P = Next(P);
-        }
-    }
-    return total;
 }
 
 unsigned short totalBukuAll(listRak LR)
@@ -225,11 +180,7 @@ unsigned short totalBukuAll(listRak LR)
         return total;
     } else {
         while (P != nullptr){
-            adrBuku Q = NextAnak(P);
-            while (Q != nullptr) {
-                total++;
-                Q = Next(Q);
-            }
+            total = total + totalBuku(listB(P));
             P = Next(P);
         }
     }
@@ -266,7 +217,7 @@ std::vector<std::vector<std::variant<std::string, int>>> getRecordRak(listRak LR
             std::vector<std::variant<std::string, int>> nodeRecord = {
                 Info(P).id,
                 Info(P).nama,
-                totalBuku(P)
+                totalBuku(listB(P))
             };
 
             record.push_back(nodeRecord);
@@ -294,7 +245,7 @@ std::vector<std::vector<std::variant<std::string, int>>> getRecordBuku(listRak L
 
     adrRak P = First(LR);
     while (P != nullptr) {
-        adrBuku Q = NextAnak(P);
+        adrBuku Q = First(listB(P));
         while (Q != nullptr) {
             if (i >= start && i < end) {
                 std::vector<std::variant<std::string, int>> nodeRecord = {
@@ -322,59 +273,12 @@ std::vector<std::vector<std::variant<std::string, int>>> getRecordBuku(listRak L
     return record;
 }
 
-
-std::vector<std::vector<std::variant<std::string, int>>> getRecordBukuByRak(adrRak P, unsigned short x)
-{
-    std::vector<std::vector<std::variant<std::string, int>>> record;
-
-    unsigned short start = (x - 1) * 20;
-    unsigned short end = x * 20;
-
-    unsigned short i = 0;
-    adrBuku Q = NextAnak(P);
-    while (Q != nullptr) {
-        if (i >= start && i < end) {
-            std::vector<std::variant<std::string, int>> nodeRecord = {
-                Info(Q).id,
-                Info(Q).judul,
-                Info(Q).tahun,
-                Info(Q).penulis,
-                Info(Q).penerbit,
-                Info(Q).idRak
-            };
-
-            record.push_back(nodeRecord);
-        }
-
-        if (i >= end) {
-            break;
-        }
-
-        Q = Next(Q);
-        i++;
-    }
-
-    return record;
-}
-
-adrBuku getElmBukuSebelum(adrRak R, adrBuku B)
-{
-    adrBuku P = NextAnak(R);
-    while (P != nullptr) {
-        if (Next(P) == B) {
-            break;
-        }
-        P = Next(P);
-    }
-    return P;
-}
-
 void pindahBuku(listRak& LR, adrRak& P, adrBuku& Q, buku b)
 {
     std::string idRakLama = Info(Q).idRak;
     if (P != nullptr) {
-        if (NextAnak(P) != Q) {
-            adrBuku R = getElmBukuSebelum(P, Q);
+        if (First(listB(P)) != Q) {
+            adrBuku R = getElmBukuSebelum(listB(P), Q);
             if (R != nullptr) {
                 if (Next(Q) != nullptr) {
                     Next(R) = Next(Q);
@@ -384,9 +288,9 @@ void pindahBuku(listRak& LR, adrRak& P, adrBuku& Q, buku b)
             }
         } else {
             if (Next(Q) != nullptr) {
-                NextAnak(P) = Next(Q);
+                First(listB(P)) = Next(Q);
             } else {
-                NextAnak(P) = nullptr;
+                First(listB(P)) = nullptr;
             }
         }
     }
@@ -405,7 +309,7 @@ void pindahBuku(listRak& LR, adrRak& P, adrBuku& Q, buku b)
 }
 
 void editIdRakPadaBuku(adrRak R) {
-    adrBuku P = NextAnak(R);
+    adrBuku P = First(listB(R));
     while (P != nullptr) {
         Info(P).idRak = Info(R).id;
         P = Next(P);

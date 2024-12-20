@@ -53,7 +53,7 @@ void saveDataBuku(listRak LR, std::string filename)
 
     adrRak P = First(LR);
     while (P != nullptr) {
-        adrBuku Q = NextAnak(P);
+        adrBuku Q = First(listB(P));
         while (Q != nullptr) {
             outFile
             << Info(Q).id << ","
