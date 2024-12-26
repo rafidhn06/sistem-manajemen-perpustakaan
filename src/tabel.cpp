@@ -182,7 +182,7 @@ char displayTabel(tabel& t)
                             break;
                         }
                         case UP: {
-                            if (i > 0) {  // Allow UP only if i is greater than 0
+                            if (i > 0) {
                                 unhighlightRecord(t);
 
                                 i--;

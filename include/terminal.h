@@ -6,8 +6,6 @@
 #define DOWN 80
 #define RIGHT 77
 #define LEFT 75
-#define MAXBARIS 30
-#define MAXKOLOM 120
 // ATASL \xDA
 //BAWAHL \xC0
 //ATASR \xBF

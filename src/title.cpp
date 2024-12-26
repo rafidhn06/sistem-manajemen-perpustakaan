@@ -5,14 +5,18 @@ void setPosisiTitle(title& T, koordinat posisi) {
 }
 
 void addTeksTitle(title& T, std::vector<std::string> teks) {
-    unsigned short maxlebar = 0;
+    unsigned short maxbaris = 0;
+    unsigned short maxkolom = 0;
     for (size_t i = 0; i < teks.size(); i++) {
         T.teks.push_back(teks[i]);
-        maxlebar += teks[i].length();
-        T.ukuran.baris++;  // Assuming T.ukuran.baris is the row count
+        maxkolom = teks[i].length();
+        maxbaris = teks.size();
     }
-    if (maxlebar > T.ukuran.kolom) {
-        T.ukuran.kolom = maxlebar;  // Update max width if necessary
+    if (maxkolom > T.ukuran.kolom) {
+        T.ukuran.kolom = maxkolom;
+    }
+    if (maxbaris > T.ukuran.baris) {
+        T.ukuran.baris = maxbaris;
     }
 }
 
@@ -56,7 +60,7 @@ void displayTitleKeren() {
     while (true) {
         title T;
         addTeksTitle(T, teksAll[i]);
-        T.posisi = {MAXBARIS/2 - 26/2, MAXKOLOM/2 - 91/2};
+        T.posisi = alignCenter(T.ukuran);
         displayTitle(T);
 
         i = (i + 1) % nframe;
@@ -70,19 +74,4 @@ void displayTitleKeren() {
         std::this_thread::sleep_for(std::chrono::milliseconds(30));
     }
     printf("\033[?25h");
-}
-
-void displayTitleSerius()
-{
-    title T;
-    addTeksTitle(T, {
-                 " █▀▀ ▀█▀ █▀▀ ▀█▀ █▀▀ █▄█   █▄█ █▀█ █▀█ █▀█ ▀▀█ █▀▀ █▄█ █▀▀ █▀█ ",
-                 " ▀▀█  █  ▀▀█  █  █▀▀ █ █   █ █ █▀█ █ █ █▀█   █ █▀▀ █ █ █▀▀ █ █ ",
-                 " ▀▀▀ ▀▀▀ ▀▀▀  ▀  ▀▀▀ ▀ ▀   ▀ ▀ ▀ ▀ ▀ ▀ ▀ ▀ ▀▀  ▀▀▀ ▀ ▀ ▀▀▀ ▀ ▀ ",
-                 "       █▀█ █▀▀ █▀▄ █▀█ █ █ █▀▀ ▀█▀ █▀█ █ █ █▀█ █▀█ █▀█         ",
-                 "       █▀▀ █▀▀ █▀▄ █▀▀ █ █ ▀▀█  █  █▀█ █▀▄ █▀█ █▀█ █ █         ",
-                 "       ▀   ▀▀▀ ▀ ▀ ▀   ▀▀▀ ▀▀▀  ▀  ▀ ▀ ▀ ▀ ▀ ▀ ▀ ▀ ▀ ▀         "
-                 });
-    setPosisiTitle(T, {5, 30});
-    displayTitle(T);
 }

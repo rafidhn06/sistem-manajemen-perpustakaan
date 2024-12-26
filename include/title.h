@@ -18,5 +18,4 @@ void setPosisiTitle(title& T, koordinat posisi);
 void addTeksTitle(title& T, std::vector<std::string> teks);
 void displayTitle(title T);
 void displayTitleKeren();
-void displayTitleSerius();
 #endif // TITLE_H_INCLUDED

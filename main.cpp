@@ -10,7 +10,7 @@
 
 void setMenuUtama(menu& m)
 {
-    addOpsi(m, {"1. Data Rak", "2. Data Buku", "3. Keluar"});
+    addOpsi(m, {"1. Data Rak", "2. Data Buku", "3. Simpan", "4. Keluar"});
     setPosisiMenu(m, alignCenter(m.ukuran));
 }
 
@@ -149,7 +149,7 @@ int main()
         setMenuUtama(m);
         inputKeyboard1 = displayMenu(m);
 
-        if (inputKeyboard1 == ESC || m.opsiTerpilih == 2) {
+        if (inputKeyboard1 == ESC || m.opsiTerpilih == 3) {
             break;
         }
         switch (m.opsiTerpilih)
@@ -383,9 +383,12 @@ int main()
                 }
                 break;
             }
+            case 2: {
+                saveDataRak(LR, "dataRak.txt");
+                saveDataBuku(LR, "dataBuku.txt");
+                break;
+            }
         }
     }
     clearScreen();
-    //saveDataRak(LR, "dataRak.txt");
-    //saveDataBuku(LR, "dataBuku.txt");
 }

@@ -42,16 +42,9 @@ int inputInt()
 {
     int a;
     std::string line;
-    if ( !std::getline( std::cin, line ) ) {
-    //  Error reading number of questions...
-    }
     std::istringstream tmp( line );
     tmp >> a >> std::ws;
-    if ( !tmp ) {
-    //  Error: input not an int...
-    } else if ( tmp.get() != EOF ) {
-    //  Error: unexpected garbage at end of line...
-    }
+
 
     return a;
 }

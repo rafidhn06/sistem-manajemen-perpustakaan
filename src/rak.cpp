@@ -45,14 +45,11 @@ void hubungkanRakBuku(listRak& LR, listBuku LB)
         adrRak R = First(LR);
 
         while (R != nullptr) {
-            //std::cout << "Processing Rak ID: " << Info(R).id << std::endl;
             if (First(LB) != nullptr) {
                 adrBuku B = First(LB);
 
                 while (B != nullptr) {
-                    //std::cout << "Processing Buku ID: " << Info(B).id << std::endl;
                     if (Info(B).idRak == Info(R).id) {
-                        //std::cout << "Memasukkan Buku dengan ID: " << Info(B).id << " Ke Rak dengan ID: " << Info(R).id << std::endl;
                         adrBuku P = newElementBuku(Info(B));
 
                         insertLastBuku(listB(R), P);
