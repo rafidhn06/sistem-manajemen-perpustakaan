@@ -51,7 +51,6 @@ void hubungkanRakBuku(listRak& LR, listBuku LB)
                 while (B != nullptr) {
                     if (Info(B).idRak == Info(R).id) {
                         adrBuku P = newElementBuku(Info(B));
-
                         insertLastBuku(listB(R), P);
                     }
                     B = Next(B);
@@ -77,20 +76,8 @@ adrRak searchRakById(listRak LR, std::string idrak)
     return P;
 }
 
-void insertLastBukuByRak(adrRak& R, adrBuku B)
+void deleteFirstRak(listRak& LR, adrRak& R)
 {
-    if (First(listB(R)) != nullptr) {
-        adrBuku P = First(listB(R));
-        while (Next(P) != nullptr) {
-            P = Next(P);
-        }
-        Next(P) = B;
-    } else {
-        First(listB(R)) = B;
-    }
-}
-
-void deleteFirstRak(listRak& LR, adrRak& R){
     R = First(LR);
     if (R != nullptr){
         if (First(LR) == Last(LR)){
@@ -103,7 +90,8 @@ void deleteFirstRak(listRak& LR, adrRak& R){
     }
 }
 
-void deleteLastRak(listRak& LR, adrRak& R){
+void deleteLastRak(listRak& LR, adrRak& R)
+{
     R = Last(LR);
     if(First(LR) == Last(LR)){
         First(LR) = nullptr;
@@ -115,7 +103,8 @@ void deleteLastRak(listRak& LR, adrRak& R){
     Prev(R) = Last(LR);
 }
 
-void deleteAfterRak(listRak& LR, adrRak prec, adrRak& R){
+void deleteAfterRak(listRak& LR, adrRak prec, adrRak& R)
+{
     R = Next(prec);
     Next(prec) = Next(R);
     if (Next(R) == nullptr){
@@ -127,8 +116,10 @@ void deleteAfterRak(listRak& LR, adrRak prec, adrRak& R){
     Prev(R) = nullptr;
 }
 
-void deleteRak(listRak& LR, adrRak R){
+void deleteRak(listRak& LR, adrRak R)
+{
     if (R != nullptr) {
+        deleteBukuRakTerhapus(listB(R));
         if (R == First(LR)){
             deleteFirstRak(LR, R);
         } else if (R == Last(LR)){
@@ -141,32 +132,6 @@ void deleteRak(listRak& LR, adrRak R){
     delete R;
 }
 
-void deleteBukuRak(adrRak& R, adrBuku B)
-{
-    adrBuku temp = nullptr;
-    if (First(listB(R)) != B) {
-        adrBuku P = First(listB(R));
-        while (Next(Next(P)) != nullptr && Next(P) != B) {
-            P = Next(P);
-        }
-        if (Next(P) == B) {
-            temp = Next(P);
-            if (Next(temp) != nullptr) {
-                Next(P) = Next(temp);
-            } else {
-                Next(P) = nullptr;
-            }
-        }
-    } else {
-        temp = First(listB(R));
-        if (Next(temp) != nullptr) {
-            First(listB(R)) = Next(temp);
-        } else {
-            First(listB(R)) = nullptr;
-        }
-    }
-    delete temp;
-}
 
 unsigned short totalBukuAll(listRak LR)
 {
@@ -300,7 +265,7 @@ void pindahBuku(listRak& LR, adrRak& P, adrBuku& Q, buku b)
         insertLastRak(LR, S);
     }
 
-    insertLastBukuByRak(S, Q);
+    insertLastBuku(listB(S), Q);
 
     Info(Q) = b;
 }

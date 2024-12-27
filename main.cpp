@@ -211,6 +211,7 @@ int main()
                             clearScreen();
                             adrRak P = searchRakByRecordTerpilih(LR, t);
 
+
                             deleteRak(LR, P);
                             break;
                         }

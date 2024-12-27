@@ -32,6 +32,7 @@ void deleteFirstBuku(listBuku& LB, adrBuku& B);
 void deleteLastBuku(listBuku& LB, adrBuku& B);
 void deleteAfterBuku(listBuku& LB, adrBuku prec, adrBuku& B);
 void deleteBuku(listBuku& LB, adrBuku B);
+void deleteBukuRakTerhapus(listBuku& LB);
 int totalBuku(listBuku LB);
 std::vector<std::vector<std::variant<std::string, int>>> getRecordBukuInRak(listBuku LB, unsigned short x);
 adrBuku getElmBukuSebelum(listBuku LB, adrBuku B);

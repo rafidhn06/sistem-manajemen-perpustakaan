@@ -75,6 +75,19 @@ void deleteAfterBuku(listBuku& LB, adrBuku prec, adrBuku& B)
     Next(prec) = Next(B);
 }
 
+void deleteBukuRakTerhapus(listBuku& LB)
+{
+    adrBuku tempB;
+    if (First(LB) != nullptr){
+        while (First(LB) != nullptr){
+            tempB = First(LB);
+            First(LB) = Next(First(LB));
+            delete tempB;
+        }
+        First(LB) = nullptr;
+    }
+}
+
 void deleteBuku(listBuku& LB, adrBuku B)
 {
     adrBuku temp = nullptr;
