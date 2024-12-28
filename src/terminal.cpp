@@ -42,9 +42,10 @@ int inputInt()
 {
     int a;
     std::string line;
-    std::istringstream tmp( line );
+    std::getline(std::cin, line);
+    std::istringstream tmp(line);
     tmp >> a >> std::ws;
-
+    tmp.get();
 
     return a;
 }
